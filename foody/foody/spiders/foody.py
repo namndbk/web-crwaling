@@ -109,7 +109,7 @@ class FoodycrawlerSpider(CrawlSpider):
 
     def parse_item(self, response):
         items = response.xpath('//ul[@class="review-list fd-clearbox ng-scope"]/li')
-        print (len(items))
+        # print(items)
         for sel in items:
             rating = sel.xpath('.//div[@ng-mouseenter="ReviewRatingPopup()"]/span/text()').extract_first()
             review = sel.xpath('.//div[@ng-class="{\'toggle-height\':DesMore}"]/span/text()').extract_first()

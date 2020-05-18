@@ -102,6 +102,6 @@ DOWNLOADER_MIDDLEWARES = {
 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': 400,
 }
-DOWNLOAD_TIMEOUT = 300
+DOWNLOAD_TIMEOUT = 30000
 LOG_LEVEL = "DEBUG"
 DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'

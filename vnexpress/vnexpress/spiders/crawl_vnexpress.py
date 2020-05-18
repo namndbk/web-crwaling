@@ -9,7 +9,7 @@ class VNEpress(scrapy.Spider):
 		"https://vnexpress.net/doi-song"
 	]
 	count = 0
-	MAX_COUNT = 10000
+	MAX_COUNT = 10
 
 
 	def parse(self, response):
